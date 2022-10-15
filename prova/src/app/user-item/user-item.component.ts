@@ -7,9 +7,10 @@ import { Component, Input, OnInit,  } from '@angular/core';
 })
 export class UserItemComponent implements OnInit {
   @Input() name: string = "";
+  specs : String[];
 
   constructor() {
-    
+    this.specs = ["alto","biondo"]
    }
 
   ngOnInit(): void {
